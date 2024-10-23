@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+    font-family: Arial,  sans-serif;
+    background-color: #f0f0f0;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.gallery_item{
+    width: 200px;
+    margin: 10px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.gallery_item img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    cursor: pointer;
+    
+}
+.gallery_item:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+}
