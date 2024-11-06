@@ -1,32 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> <!-- делает нам хтмл-->
+<html lang="en"> <!--язык-->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery of images with Flexbox Layout</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8"> <!--короче нужная штука которая подключает на девятом небе нам код да-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--на телефоны помогает делать изображение размер и так далее-->
+    <title>Gallery of images with Flexbox Layout</title> <!--название нашей страницы которое будет отабражаться вверху в самих вкладках--->
+    <link rel="stylesheet" href="style.css">  <!--подключает файлик к основному-->
 </head>
-<body>
-    <div class="gallery">
-        <div class="gallery_item">
-            <img src="image.png" alt="image1">
+<body> <!--сама основа проекта-->
+    <div class="gallery"> <!--класс галлереи-->
+        <div class="gallery_item" onclick="changeImage(this)"> <!--подкласс-->
+            <img src="image.png" alt="image1" data-alt = "image6.png"> <!--фото добовляет-->
         </div>
 
-        <div class="gallery_item">
-            <img src="image2.png" alt="image2">
+        <div class="gallery_item" onclick="changeImage(this)" > <!---->
+            <img src="image2.png" alt="image2" data-alt = "image7.png" > <!---->
         </div>
 
-        <div class="gallery_item">
-            <img src="image3.png" alt="image3">
+        <div class="gallery_item" onclick="changeImage(this)">
+            <img src="image3.png" alt="image3" data-alt = "image7.png">
         </div>
 
-        <div class="gallery_item">
-            <img src="image4.png" alt="image4">
+        <div class="gallery_item" onclick="changeImage(this)">
+            <img src="image4.png" alt="image4" data-alt = "image7.png">
         </div>
 
-        <div class="gallery_item">
-            <img src="image5.png" alt="image5">
-        </div>
+        <div class="gallery_item" onclick="changeImage(this)">
+            <img src="image5.png" alt="image5" data-alt = "image7.png">
+        </div> 
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
